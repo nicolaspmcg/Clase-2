@@ -1,1 +1,163 @@
-<!-- cualquier cosa -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Mi segundo sitio</title>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="servicios.html">Servicios</a></li>
+			<li><a href="productos.html">Productos</a></li>
+			<li><a href="contacto.html">Contacto</a></li>
+		</ul>
+	</nav>
+
+	<header>
+		<h1>Mi primer sitio</h1>
+		<h4>Aprendiendo HTML5</h4>
+		<p>
+			Este es mi primer sitio web, aprendiendo etiquetas de HTML5.
+		</p>
+		<a href="http://www.google.com">Ir a Google</a>
+	</header>
+
+	<section>
+		<article>
+			<h2>Elemento 1</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+			<button>Soy un botón</button>
+			<a href="http://www.google.com"><img src="http://icon-icons.com/icons2/317/PNG/512/user-male-icon_34332.png"></a>
+			<hr/>
+		</article>
+
+		<article>
+			<h2>Elemento 2</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+			<img src="https://image.freepik.com/iconos-gratis/silueta-usuario-masculino_318-35708.jpg">
+		</article>
+
+		<article>
+			<h2>Elemento 3</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+			<img src="https://image.freepik.com/iconos-gratis/la-imagen-del-usuario-con-el-fondo-negro_318-34564.jpg">
+		</article>
+
+		<article>
+			<table>
+				<tr>
+					<th>Nombre</th>
+					<th>Nota 1</th>
+					<th>Nota 2</th>
+					<th>Promedio</th>
+				</tr>
+				<tr>
+					<td>Daniel</td>
+					<td>8</td>
+					<td>6</td>
+					<td>7</td>
+				</tr>
+				<tr>
+					<td>Laura</td>
+					<td>10</td>
+					<td>8</td>
+					<td>9</td>
+				</tr>
+				<tr>
+					<td>Simón</td>
+					<td>4</td>
+					<td>2</td>
+					<td>3</td>
+				</tr>
+			</table>
+		</article>
+	</section>
+
+	<section>
+		<h4>Formulario de contacto</h4>
+		<form method="POST" action="enviar.php" enctype="multipart/fomr-data">
+
+			<label for="nombre">Nombre: </label>
+			<input type="text" name="nombre" placeholder="Escribí tu nombre" required>
+			
+			<br/>
+			<br/>
+
+			<label for="correo">Email: </label>
+			<input type="email" name="correo" placeholder="Escribí tu mail" required>
+
+			<br/>
+			<br/>
+
+			<label for="password">Contraseña: </label>
+			<input type="password" name="password" placeholder="Contraseña" required="">
+
+			<br/>
+			<br/>
+
+			<label for="provicia">Provincia</label>	
+			<select name="provincia" required>
+				<option value="">Elegí una opción</option>
+				<option value="Buenos Aires">Buenos Aires</option>
+				<option value="Córdoba">Córdoba</option>
+				<option value="Santa Fé">Santa Fé</option>
+				<option value="Misiones">Misiones</option>
+			</select>
+
+			<br/>
+			<br/>
+
+			<input type="checkbox" name="tyc" required>
+			<label for="tyc">Aceptar términos y condiciones</label>
+			
+			<br/>
+			<br/>
+
+			<label for="entrega">Entrega: </label>
+			<input type="radio" name="entrega" value="delivery">Delivery
+			<input type="radio" name="entrega" value="retira">Retira por el local			
+
+			<br/>
+			<br/>
+
+			<label for="mensaje">Mensaje: </label>
+			<textarea name"mensaje">Escribí tu mensaje aquí...</textarea>
+
+			<br/>
+			<br/>
+
+			<label for="file">Adjuntar CV aquí</label>
+			<input type="file" name"cv">
+
+			<br/>
+			<br/>
+
+			<input type="submit" value="Enviar">
+
+		</form>
+	</section>
+
+</body>
+</html>
